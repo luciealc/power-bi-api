@@ -169,7 +169,7 @@ def bad_request_error(error):
 
 @app.errorhandler(500)
 def internal_server_error(error):
-    return jsonify({"error": "Internal Server Error"}), 500
+    return jsonify({"error": "Internal Server Error", "message": error}), 500
 
 @app.route("/hello", methods=["GET"])
 def hello():
