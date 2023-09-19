@@ -7,7 +7,7 @@ app = Flask(__name__)
 # to run
 
 full_cities = []
-key = 'b284ec7b6fd118841153a469f3b58eec555f2585e3337ff2531ae4b7014b21dc'
+key = 'acd491a435643f93f2057d3c97b067a5aebfe76746d699e654cb7102151c5107'
 
 #get cities min 15
 @app.route("/", methods=["GET"])
