@@ -158,7 +158,6 @@ def get_all():
 
     return jsonify(full_cities), 200
 
-
 # error management
 @app.errorhandler(404)
 def not_found_error(error):
@@ -171,3 +170,7 @@ def bad_request_error(error):
 @app.errorhandler(500)
 def internal_server_error(error):
     return jsonify({"error": "Internal Server Error"}), 500
+
+@app.route("/hello", methods=["GET"])
+def hello():
+    return "Hello World"
